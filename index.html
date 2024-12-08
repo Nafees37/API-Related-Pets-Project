@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Related Pets Project</title>
+  <!-- font icon link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+  <!-- daisyui link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- tailwind css Link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font family link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- custom css link -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="lato-font">
+  <!-- header section design -->
+  <header>
+    <!-- navbar section -->
+    <section class="navbar w-11/12 mx-auto">
+      <div class="navbar bg-base-100 flex justify-between">
+        <div class="">
+          <div class="logo-area flex font-[900] text-2xl">
+            <div class="logo flex justify-center items-center w-[24] h-[24]">
+              <img src="images/logo.webp" alt="Img" class="w-fit h-fit">
+            </div>
+            <div class="logo-text pl-1">Peddy</div>
+          </div>
+        </div>
+
+        <!-- large Menu -->
+        <div class="navbar-center font-[400] hidden sm:block">
+          <a class="btn btn-ghost text-base">Home</a>
+          <a class="btn btn-ghost text-base">Shop</a>
+          <a class="btn btn-ghost text-base">Contact</a>
+        </div>
+        <!-- small Menu -->
+        <div class="dropdown sm:hidden navbar-center">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-[#131313] text-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a class="text-base">Home</a></li>
+            <li><a class="text-base">Shop</a></li>
+            <li><a class="text-base">Contact</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <button class="btn btn-ghost btn-circle border-2 border-gray-100">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero section -->
+    <section class="w-11/12 mx-auto">
+      <div class="">
+        <div class="flex justify-center items-center">
+          <div class="hero-content text-center">
+            <div class="">
+              <p class="text-sm pb-4">Bringing Families Together ❤️‍🔥</p>
+              <h1 class="pb-4 text-3xl md:text-5xl font-bold">
+                Your Path to Adoption <br> Starts Here
+              </h1>
+              <p class="pb-6">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking <br> at its layout. The point of using Lorem Ipsum is that it has a.
+              </p>
+              <a href="#main">
+                <button class="btn bg-[#0E7A81] hover:bg-[#0E7A81] text-white">View More</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="image max-w-[800px] mx-auto">
+          <img src="images/pet.webp" alt="" class="w-full h-full">
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- main section -->
+  <main id="main">
+    <section class="w-11/12 mx-auto">
+      <!-- text content -->
+      <div class="hero pt-11">
+        <div class="hero-content text-center">
+          <div class="">
+            <h1 class="text-2xl md:text-4xl font-black">Adopt Your Best Friend</h1>
+            <p class="py-6 font-normal text-xs md:text-sm">
+              It is a long established fact that a reader will be distracted by the readable content of a <br> page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- dynamic button -->
+      <div id="button-container" class="parent-button flex justify-between flex-wrap gap-5">
+        <!-- <div
+          class="btn sm:btn-lg flex gap-3 font-bold text-base border-[#0E7A81] hover:border-[#0E7A81] hover:bg-[#0E7A811A] hover:text-black rounded-full">
+          <img src="images/logo.webp" alt="">
+          <button class="">Normal</button>
+        </div>
+
+        <div
+          class="rounded-full btn sm:btn-lg flex gap-3 font-bold text-base btn-outline border-[#0E7A81] hover:border-[#0E7A81] hover:bg-[#0E7A811A] hover:text-black">
+          <img src="images/logo.webp" alt="">
+          <button class="">Normal</button>
+        </div>
+
+        <div
+          class="rounded-full btn sm:btn-lg flex gap-3 font-bold text-base btn-outline border-[#0E7A81] hover:border-[#0E7A81] hover:bg-[#0E7A811A] hover:text-black">
+          <img src="images/logo.webp" alt="">
+          <button class="">Normal</button>
+        </div>
+
+        <div
+          class="btn sm:btn-lg flex gap-3 font-bold text-base btn-outline border-[#0E7A81] hover:border-[#0E7A81] hover:bg-[#0E7A811A] hover:text-black rounded-full">
+          <img src="images/logo.webp" alt="">
+          <button class="">Normal</button>
+        </div> -->
+
+      </div>
+      <div class="flex justify-between pt-14 pb-10 items-center">
+        <h1 class="font-bold text-base">Best Deal For you</h1>
+
+        <!-- dynamic sort button -->
+        <div id="sortBtn">
+          <button class="btn bg-[#0E7A81] hover:bg-[#0E7A81] text-white">Sort by Price</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- card section -->
+    <section class="w-11/12 mx-auto pb-12">
+      <div class="grid grid-cols-4 gap-4">
+
+        <div class="col-span-3">
+
+          <!-- loading Bar Design -->
+          <div id="loading" class="none">
+            <div class="flex justify-center items-center pb-5">
+              <span class="loading loading-bars loading-lg"></span>
+            </div>
+          </div>
+
+
+          <!-- No Data Card Design-->
+          <div class="hidden" id="error">
+            <div class="bg-[#13131308] min-h-screen flex justify-center items-center">
+              <div class="">
+                <div class="flex justify-center">
+                  <img src="images/error.webp" alt="">
+                </div>
+                <div class="hero-content text-center">
+                  <div class="">
+                    <h1 class="text-base sm:text-lg md:text-2xl font-bold">No Information Available</h1>
+                    <p class="pt-5 text-xs sm:text-base">
+                      It is a long established fact that a reader will be distracted by the readable content of a page
+                      when looking at <br>
+                      its layout. The point of using Lorem Ipsum is that it has a.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- dynamic card section -->
+          <div id="card" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <!-- dynamic card content -->
+
+          </div>
+        </div>
+
+        <!-- dynamic image add -->
+        <div class="col-span-1 border border-gray-200 rounded p-2">
+          <div id="likeParent" class="grid grid-cols-1 gap-2 md:grid-cols-2">
+
+            <!-- <div>
+              <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal section -->
+    <section">
+      <div>
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+
+        <dialog id="my_modal_5" class="modal modal-middle">
+          <div class="modal-box w-10/12 md:w-6/12 max-w-5xl">
+
+            <div id="modal-body">
+
+
+            </div>
+
+            <div class="modal-action">
+              <form method="dialog" class="w-full">
+                <!-- if there is a button in form, it will close the modal -->
+                <button
+                  class="btn font-bold text-[#0E7A81] border-[#0E7A81] hover:border-[#0E7A81] hover:bg-[#0E7A811A] hover:text-[#0E7A81] rounded w-full">Close</button>
+              </form>
+            </div>
+          </div>
+
+        </dialog>
+      </div>
+      </section>
+
+      <!-- modal Adopt Button -->
+      <section>
+        <div id="timeOut">
+          <dialog id="my_modal_3" class="modal">
+            <div class="modal-box">
+              <div>
+                <div><i class='bx bxl-sketch text-5xl text-[#0E7A81] text-center block'></i></div>
+                <h3 class="text-4xl font-bold text-center">Congrats</h3>
+                <p class="py-4 text-center">Adoption Process Is Start For Your Pet</p>
+
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </section>
+  </main>
+
+  <!-- footer section -->
+  <footer>
+    <section class="w-11/12 mx-auto">
+      <footer class="footer bg-[#131313] text-white p-10 grid grid-cols-1 md:grid-cols-3 items-center">
+        <aside class="">
+          <div class="pb-4">
+            <div class="logo-area flex font-[900] text-2xl">
+              <div class="logo flex justify-center items-center w-[24] h-[24]">
+                <img src="images/logo.webp" alt="Img" class="w-fit h-fit">
+              </div>
+              <div class="logo-text pl-1">Peddy</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-y-2 footer-title text-xs">
+            <p>Location: av. Washington 165, NY CA</p>
+            <p>54003</p>
+            <p>Phone: +31 85 964 47 25</p>
+            <p>Email: info@yourdomain.com</p>
+            <p>Openings hours: 9.00 AM - 5.00 PM</p>
+          </div>
+
+          <div class="flex justify-between items-center gap-3 text-3xl text-[#0E7A81] cursor-pointer">
+            <i class='bx bxl-facebook-circle hover:text-white'></i>
+            <i class='bx bxl-twitter hover:text-white'></i>
+            <i class='bx bxl-youtube hover:text-white'></i>
+            <i class='bx bxl-instagram hover:text-white'></i>
+          </div>
+
+
+        </aside>
+        <nav class="justify-self-center">
+          <h6 class="pb-4">Useful Links</h6>
+          <div class="flex flex-col gap-y-2 footer-title text-xs">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Animals</a>
+            <a class="link link-hover">Foundation</a>
+            <a class="link link-hover">Contact</a>
+          </div>
+        </nav>
+        <form class="justify-self-end" action="#">
+          <h6 class="pb-4">Drop a Message</h6>
+          <fieldset class="form-control">
+            <div class="w-full">
+              <div class="pb-3">
+                <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+              </div>
+              <div>
+                <button
+                  class="btn bg-[#0E7A81] join-item w-full text-white border-none rounded hover:bg-[#0E7A81] ">Subscribe</button>
+              </div>
+
+            </div>
+
+          </fieldset>
+        </form>
+      </footer>
+    </section>
+  </footer>
+
+  <!-- custom js link -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+/* global font family */
+.lato-font {
+  font-family: "Lato", sans-serif;
+}
+
+.active{
+  /* color: black; */
+  border-radius: 9999px
+}
